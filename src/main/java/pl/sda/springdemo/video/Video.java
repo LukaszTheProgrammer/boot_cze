@@ -40,4 +40,16 @@ public class Video {
     public int getRating() {
         return rating;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
 }
