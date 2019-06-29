@@ -1,18 +1,18 @@
-package pl.sda.springdemo.flights;
+package pl.sda.springdemo.flight;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Flight {
 
-    private final String from;
-    private final String to;
-    private final List<String> connections;
+    private String from;
+    private String to;
+    private List<String> connections;
 
-    @JsonCreator
-    public Flight(@JsonProperty("from") String from,  @JsonProperty("to") String to, @JsonProperty("connections") List<String> connections) {
+    public Flight(@JsonProperty("from") String from,
+                  @JsonProperty("to") String to,
+                  @JsonProperty("connections") List<String> connections) {
         this.from = from;
         this.to = to;
         this.connections = connections;

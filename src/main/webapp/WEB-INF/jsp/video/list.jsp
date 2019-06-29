@@ -25,14 +25,18 @@
     </style>
 </head>
 <body>
-<a href="/video/add">Add Video</a>
 <div class="mainContainer">
-
+    <a href="/video/add">Add Video</a>
+    <form method="get" action="/video">
+        <label>Search phrase:</label>
+        <input type="text" name="phrase"/>
+        <input type="submit" />
+    </form>
     <c:if test="${videos.size() > 0}">
         <table class="videoList">
             <tr>
                 <th>
-                    Title
+                    Title <a href="/video?sort=${sort}">^</a>
                 </th>
                 <th>
                     Actions

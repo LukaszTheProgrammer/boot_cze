@@ -1,4 +1,4 @@
-package pl.sda.springdemo.flights;
+package pl.sda.springdemo.flight;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 
 public class FlightResponse {
 
-    private final List<Flight> flights;
+    private List<Flight> flights;
 
     @JsonCreator
     public FlightResponse(List<Flight> flights) {
