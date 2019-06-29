@@ -27,6 +27,7 @@
 <body>
 <a href="/video/add">Add Video</a>
 <div class="mainContainer">
+
     <c:if test="${videos.size() > 0}">
         <table class="videoList">
             <tr>
