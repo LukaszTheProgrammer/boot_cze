@@ -13,7 +13,7 @@ public class FlightService {
         Unirest.config().setObjectMapper(new JacksonObjectMapper());
 
 
-        HttpResponse<FlightResponse> response = Unirest.get("http://192.168.0.54:9090/flights")
+        HttpResponse<FlightResponse> response = Unirest.get("http://localhost:9090/flights")
             .queryString("from", from)
             .queryString("to", to)
             .asObject(FlightResponse.class);
