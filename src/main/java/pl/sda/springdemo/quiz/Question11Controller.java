@@ -9,6 +9,7 @@ class Question11Controller {
 
     @PostMapping("/path11")
     public String method1(@RequestBody MyBody body) {
+
         return "question11/post/" + body.getName();
     }
 }

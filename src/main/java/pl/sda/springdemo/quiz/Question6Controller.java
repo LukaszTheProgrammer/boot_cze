@@ -10,6 +10,7 @@ class Question6Controller {
 
     @PutMapping("/path6/{id}")
     public String method1(@PathVariable(required = false) Long id) {
+
         return "question6/put/" + id;
     }
 

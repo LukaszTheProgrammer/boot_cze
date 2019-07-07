@@ -13,6 +13,7 @@ class Question7Controller {
 
     @GetMapping("/path7/{id}")
     public String method1(@PathVariable Long id, @RequestParam String name) {
+
         return "question7/get/"+id+"/"+name;
     }
 
